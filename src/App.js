@@ -49,16 +49,11 @@ function App() {
     setFinalInvList(filteredList);
   }
 
-  const addCarHandler = (newCar) => {
-    const lstId = finalInvList.length;
-    newCar.id=lstId + 1;
-    setFinalInvList((prevInvList) => [...prevInvList, newCar]);
-  }
 
   return (
    <>
     <Header carTitle={companyName} carTitleLogo={carTitleLogoPNG} cssClass={classesCss}></Header>
-    <Filter onSubmit={filterHandler} onAdd={addCarHandler}></Filter>
+    <Filter onSubmit={filterHandler}></Filter>
     { finalInvList && <Output iList={finalInvList} name={companyName}></Output>}
     { finalInvList.length === 0 && <p>No cars found</p>}
    </>
