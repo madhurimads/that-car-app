@@ -26,10 +26,8 @@ function App() {
   {id:7, img: audiGold, make: 'Audi', 'model': 'eTron', year: '2023', type: 'Chronos', mileage: '34,500', price: '62,999',color:'gold'},
   {id:8, img: hondaCivic, make: 'Honda', 'model': 'Civic', year: '2023', type: 'Sedan LX', mileage: '1000', price: '25,045',color:'red'}];
 
-
   const companyName = 'that car place';
 
-  //const [isFiltered, setIsFiltered] = useState(false); 
   const [finalInvList, setFinalInvList] = useState(inventoryList);
 
   const filterHandler = (filterString) => {
