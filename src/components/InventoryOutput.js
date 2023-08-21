@@ -6,7 +6,7 @@ const InventoryOutput = (props) => {
     let invListSorted = props.iList.sort((a,b) => (a.id < b.id) ? 1 : -1);
     console.log(invListSorted);
     return (invListSorted.map(car =>  
-    <div style={{"padding":"10px", "display":"inline-block"}}>    
+    <div className='inventoryOutput'>    
     <Card>
         <ul>
         <li> <img src={car.img} alt={car.id}></img></li>    
